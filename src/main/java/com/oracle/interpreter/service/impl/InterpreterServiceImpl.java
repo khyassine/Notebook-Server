@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class InterpreterServiceImpl implements InterpreterService {
+
     @Override
     public InterpreterResponse execute(InterpreterRequest request) {
-
         return null;
     }
 
@@ -20,4 +20,6 @@ public class InterpreterServiceImpl implements InterpreterService {
 
         return null;
     }
+
+
 }
