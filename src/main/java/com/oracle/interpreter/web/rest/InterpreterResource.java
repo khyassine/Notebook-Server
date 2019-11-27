@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpSession;
+
 @RestController
 @RequestMapping("/execute")
 
@@ -23,9 +25,10 @@ public class InterpreterResource {
     }
 
     @PostMapping
-    public String execute(@RequestBody  InputRequest inputRequest){
+    public String execute(@RequestBody InputRequest inputRequest, HttpSession httpSession){
         String result=interpreterService.execute(inputRequest).getResult();
         log.info(String.format("Result : %s !", result));
+
         return result;
     }
 }
