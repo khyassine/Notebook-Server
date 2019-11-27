@@ -4,7 +4,7 @@ public class InterpreterRequest {
     private String code;
     private String language;
 
-    public InterpreterRequest(String code, String language) {
+    public InterpreterRequest(String language, String code) {
         this.code = code;
         this.language = language;
     }
