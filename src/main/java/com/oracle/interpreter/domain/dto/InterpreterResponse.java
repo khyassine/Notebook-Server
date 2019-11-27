@@ -1,4 +1,4 @@
-package com.oracle.interpreter.domain;
+package com.oracle.interpreter.domain.dto;
 
 public class InterpreterResponse {
     private String result;

@@ -1,6 +1,10 @@
 package com.oracle.interpreter.domain.dto;
 
 public class InterpreterRequest {
+    public void setCode(String code) {
+        this.code = code;
+    }
+
     private String code;
     private String language;
 
